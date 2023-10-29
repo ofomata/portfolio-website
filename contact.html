@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hendrix | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/04f49d956a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Header Section-->
+        <header>
+            <a href="#Home" class="logo">Hendrix</a>
+
+            <nav>
+                <a href="#"><i class="fa-solid fa-xmark close"></i></a>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <a href="#" class="nav-button">Download Resume</a>
+            </nav>
+
+            <div class="menu">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </header>
+
+        <!--Hero Contact-->
+        <div class="contact-wrapper">
+            <div class="hero-contact">
+                <h1>Let's Have a Chat!</h1>
+                <p> 
+                    I thrive on turning clients' visions into reality by translating 
+                    their ideas into <span>beautifully designed</span> and <span>highly functional</span> web interfaces. 
+                    With a strong commitment to <span>clean, maintainable code</span>, 
+                    I'm here to help you make a <span>powerful digital impact</span>.
+                </p>
+            </div>
+        </div>
+            
+        <div class="contact">
+            <form action="submit.php" method="post" id="myForm">
+                <h3>Send a Message</h3>
+    
+                <label for="name">Name</label>
+                <input type="text" class="message" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" class="message" required>
+                <br>
+                <label for="subject">Subject</label>
+                <input type="text" class="message">
+                <br>
+                <label for="subject">Message</label>
+                <textarea rows="5" placeholder="Send a Message" required></textarea>
+                <br>
+                <button type="submit" class="submit" value="submit">Send Message</button>
+            </form>
+            <div class="alternative">
+                <h3>Prefer Email?</h3>
+                <p>
+                    You can reach me in every way possible. Please write directly 
+                    to <a href="mailto:miracleosita355@gmail.com" class="mail">miracleosita355@gmail.com</a> and i will get back to you.
+                </p>
+            </div>
+        </div>
+
+        <!--Footer Contact-->
+        <div class="Footer">
+            <div class="footer-section">
+                <div class="text">
+                    <h1>Hendrix</h1>
+                    <p>©2023 Hendrix. Built by Miracle Ofomata.</p>
+                    <small>All Rights Reserved.</small>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
