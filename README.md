@@ -1,3 +1,4 @@
 # portfolio-website
-A Personal Portfolio
-This Portfolio is still under development
+A Personal Portfolio.
+<br>
+This Portfolio is still under development.
