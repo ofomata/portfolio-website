@@ -542,6 +542,14 @@ nav{
     transform: translateX(0);
 }
 
+@media(min-width: 768px) {
+    .portfolio-box{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+}
+
 @media (min-width: 920px) {
     .menu{
         display: none;
@@ -621,12 +629,6 @@ nav{
 
     .nav-list .icon{
         font-size: 20px;
-    }
-
-    .portfolio-box{
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 16px;
     }
 
     /*
