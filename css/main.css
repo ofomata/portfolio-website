@@ -532,7 +532,7 @@ nav{
     top: 150px;
     padding: 16px;
     z-index: 999;
-    transform: translateY(-160%);
+    transform: translateY(-250%);
     transition: transform 0.5s ease-in-out;
     border-radius: 12px;
 
